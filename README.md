@@ -1,8 +1,8 @@
 # knex-prisma
 
 Experimental knex-prisma integration
-##Goals
-###Short Term
+## Goals
+### Short Term
 
 - **Database query performance and flexibility:** Prisma query grammar is great, but it is not as
   expressive as SQL (e.g. no subqueries, complex joining etc).
@@ -23,7 +23,7 @@ Experimental knex-prisma integration
 - **Avoid Prisma's executeRaw** doing moderately complex dynamic SQL with Prisma's executeRaw becomes painful because
   you have to generate valid SQL syntax and worry about SQL injection attacks
 
-###Medium Term
+### Medium Term
 
 - **Eliminate Requirement for Prisma Server in Production:** For some use cases, the Prisma server adds unnecessary
   complexity. (E.g. if you are only hitting a Postgres database, it is a cleaner
@@ -33,7 +33,7 @@ Experimental knex-prisma integration
   excellent development
   experience and database migration tools during development and deployment of apps
 
-##How To Run the Experimental Code
+## How To Run the Experimental Code
 
 - Clone this repo (Prisma and docker required)
 
@@ -50,7 +50,7 @@ ts-node src/index.ts
 ts-node src/knex-prisma-generate.ts > ./src/generated/knex-prisma.ts
 ```
 
-##Example Code (src/index.ts)
+## Example Code (src/index.ts)
 
 ```typescript
 import { knexPrismaBag as kp } from "./postgres";
