@@ -1,6 +1,8 @@
 # knex-prisma
 
 Experimental knex-prisma integration
+## Related Github Issue
+https://github.com/prisma/prisma/issues/4155
 ## Goals
 ### Short Term
 
